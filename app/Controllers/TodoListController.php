@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\TodoListModel;
 use CodeIgniter\API\ResponseTrait;
-
+//http://localhost:8080/TodoListController/view
 class TodoListController extends BaseController
 {
     use ResponseTrait;
