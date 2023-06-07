@@ -45,6 +45,13 @@ $routes->put('todo/(:num)', 'TodoListController::update/$1');
 $routes->delete('todo/(:num)', 'TodoListController::delete/$1');
 
 // todo list route with RESTful API.
+//  Login RESTful API.
+$routes->get('login', 'LoginController::index');
+$routes->post('login', 'LoginController::login');
+$routes->get('logout', 'LoginController::logout');
+$routes->get('dashboard', 'DashboardController::index');
+
+
 
 /*
  * --------------------------------------------------------------------
