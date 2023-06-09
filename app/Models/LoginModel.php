@@ -42,6 +42,7 @@ class LoginModel extends Model
     {
         // 從資料庫中獲取使用者資訊的邏輯
         // 可以使用 Query Builder 或 ORM 等方式進行資料庫查詢
+        // Query Builder
         return $this->db->table('users')->where('username', $username)->get()->getRow();
     }
 
