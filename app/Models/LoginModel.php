@@ -40,9 +40,8 @@ class LoginModel extends Model
     protected $afterDelete    = [];
     public function getUserByUsername($username)
     {
-        // 在此實作從資料庫中獲取使用者資訊的邏輯
+        // 從資料庫中獲取使用者資訊的邏輯
         // 可以使用 Query Builder 或 ORM 等方式進行資料庫查詢
-        // 假設您使用的是 Query Builder
         return $this->db->table('users')->where('username', $username)->get()->getRow();
     }
 
